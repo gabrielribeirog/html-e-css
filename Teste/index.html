@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML & CSS — Desenvolvimento Web</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Checkbox ANTES da navbar para o seletor CSS ~ funcionar -->
+  <input type="checkbox" id="nav-toggle">
+
+  <!-- ── NAVBAR ── -->
+  <nav class="navbar">
+    <a href="#home" class="nav-brand">&lt;<em>HTML</em>/<em>CSS</em>&gt;</a>
+
+    <ul class="nav-links">
+      <li><a href="#home"><i class="bi bi-house"></i> Home</a></li>
+      <li><a href="#saibamais"><i class="bi bi-info-circle"></i> Saiba Mais</a></li>
+      <li><a href="#cursostabela"><i class="bi bi-grid"></i> Cursos</a></li>
+      <li><a href="#tabela"><i class="bi bi-table"></i> Tabela</a></li>
+      <li><a href="#contatos" class="nav-cta"><i class="bi bi-envelope"></i> Contato</a></li>
+    </ul>
+
+    <label class="hamburger-label" for="nav-toggle" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </nav>
+
+  <!-- ── MOBILE MENU ── -->
+  <div class="mobile-nav">
+    <a href="#home"><i class="bi bi-house"></i> Home</a>
+    <a href="#saibamais"><i class="bi bi-info-circle"></i> Saiba Mais</a>
+    <a href="#cursostabela"><i class="bi bi-grid"></i> Cursos</a>
+    <a href="#tabela"><i class="bi bi-table"></i> Tabela</a>
+    <a href="#contatos"><i class="bi bi-envelope"></i> Contato</a>
+  </div>
+
+  <!-- ── HERO ── -->
+  <section id="home">
+    <div class="hero-inner">
+      <div>
+        <div class="hero-tag">Desenvolvimento Web</div>
+
+        <h1 class="hero-title">
+          HTML<br>
+          <span class="outline">&amp; CSS</span><br>
+          <span class="gold">MODERNO</span>
+        </h1>
+
+        <p class="hero-desc">
+          Aprenda a construir interfaces incríveis do zero.
+          HTML estrutura o conteúdo, CSS traz o estilo —
+          juntos formam a base de tudo na web.
+        </p>
+
+        <div class="hero-btns">
+          <a href="#saibamais" class="btn-accent">
+            Saiba Mais <i class="bi bi-arrow-down"></i>
+          </a>
+          <a href="#contatos" class="btn-outline">
+            Contato <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div>
+            <div class="stat-num">3</div>
+            <div class="stat-lbl">Tecnologias</div>
+          </div>
+          <div>
+            <div class="stat-num">100%</div>
+            <div class="stat-lbl">Gratuito</div>
+          </div>
+          <div>
+            <div class="stat-num">∞</div>
+            <div class="stat-lbl">Possibilidades</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="code-panel">
+        <div class="code-topbar">
+          <div class="dot r"></div>
+          <div class="dot y"></div>
+          <div class="dot g"></div>
+          <span class="code-fname">index.html</span>
+        </div>
+        <div class="code-body">
+          <div class="cl"><span class="ln">1</span><span class="cm">&lt;!-- Estrutura básica --&gt;</span></div>
+          <div class="cl"><span class="ln">2</span><span class="kw">&lt;!</span><span class="tg">DOCTYPE</span> <span class="at">html</span><span class="kw">&gt;</span></div>
+          <div class="cl"><span class="ln">3</span><span class="tg">&lt;html</span> <span class="at">lang</span>=<span class="sv">"pt-BR"</span><span class="tg">&gt;</span></div>
+          <div class="cl"><span class="ln">4</span><span class="tg">&lt;head&gt;</span></div>
+          <div class="cl"><span class="ln">5</span>&nbsp;&nbsp;<span class="tg">&lt;meta</span> <span class="at">charset</span>=<span class="sv">"UTF-8"</span><span class="tg">&gt;</span></div>
+          <div class="cl"><span class="ln">6</span>&nbsp;&nbsp;<span class="tg">&lt;title&gt;</span><span class="vl">Meu Site</span><span class="tg">&lt;/title&gt;</span></div>
+          <div class="cl"><span class="ln">7</span><span class="tg">&lt;/head&gt;</span></div>
+          <div class="cl"><span class="ln">8</span><span class="tg">&lt;body&gt;</span></div>
+          <div class="cl"><span class="ln">9</span>&nbsp;&nbsp;<span class="tg">&lt;h1&gt;</span><span class="vl">Olá, Mundo!</span><span class="tg">&lt;/h1&gt;</span></div>
+          <div class="cl"><span class="ln">10</span>&nbsp;&nbsp;<span class="tg">&lt;p&gt;</span><span class="vl">Bem-vindo ao HTML</span><span class="tg">&lt;/p&gt;</span></div>
+          <div class="cl"><span class="ln">11</span><span class="tg">&lt;/body&gt;</span></div>
+          <div class="cl"><span class="ln">12</span><span class="tg">&lt;/html&gt;</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SAIBA MAIS ── -->
+  <section id="saibamais">
+    <div class="sec">
+      <div class="eyebrow">Características</div>
+      <h2 class="sec-title">O que são<br>HTML &amp; CSS?</h2>
+      <p class="sec-sub">Duas tecnologias que trabalham juntas para criar qualquer página da internet que você já visitou.</p>
+
+      <div class="feat-grid">
+        <div class="fcard html">
+          <div class="fcard-icon y"><i class="bi bi-code-slash"></i></div>
+          <h3>HTML <span class="ftag y">Estrutura</span></h3>
+          <ul>
+            <li>Compatibilidade universal com todos os browsers</li>
+            <li>Facilidade de aprendizado e escrita</li>
+            <li>Estrutura semântica para SEO</li>
+            <li>Integração nativa com CSS e JavaScript</li>
+            <li>Organização lógica do conteúdo</li>
+          </ul>
+        </div>
+
+        <div class="fcard css">
+          <div class="fcard-icon o"><i class="bi bi-palette"></i></div>
+          <h3>CSS <span class="ftag o">Estilo</span></h3>
+          <ul>
+            <li>Estilização visual completa e precisa</li>
+            <li>Responsividade para qualquer tela</li>
+            <li>Separação entre estrutura e design</li>
+            <li>Layouts modernos com Flexbox e Grid</li>
+            <li>Animações e transições suaves</li>
+          </ul>
+        </div>
+      </div> 
+
+      <h3 class="vid-title">Vídeo sobre o tema</h3>
+      <div class="video-outer">
+        <video controls>
+          <source src="video.mp4" type="video/mp4">
+          <track src="legenda.vtt" kind="subtitles" srclang="pt-br" label="Português">
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CURSOS ── -->
+  <section id="cursostabela">
+    <div class="sec">
+      <div class="eyebrow">Aprenda</div>
+      <h2 class="sec-title">Cursos<br>Recomendados</h2>
+      <p class="sec-sub">Selecionamos os melhores cursos para você dominar HTML e CSS do básico ao avançado.</p>
+
+      <div class="gallery">
+        <div class="gitem"><img src="img1.png" alt="Curso 1"></div>
+        <div class="gitem"><img src="img2.png" alt="Curso 2"></div>
+        <div class="gitem"><img src="img3.png" alt="Curso 3"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TABELA ── -->
+  <section id="tabela">
+    <div class="sec">
+      <div class="eyebrow">Comparativo</div>
+      <h2 class="sec-title">Tabela de<br>Tecnologias</h2>
+      <p class="sec-sub">Uma visão geral das tecnologias web e seus papéis no desenvolvimento.</p>
+
+      <div class="table-outer">
+        <table>
+          <thead>
+            <tr>
+              <th>Tecnologia</th>
+              <th>Função</th>
+              <th>Dificuldade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="td-name">
+                  <i class="bi bi-filetype-html" style="color:#e44d26;font-size:1.1rem"></i>
+                  HTML
+                </div>
+              </td>
+              <td>Estrutura e conteúdo</td>
+              <td><span class="badge easy">Fácil</span></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="td-name">
+                  <i class="bi bi-filetype-css" style="color:#2965f1;font-size:1.1rem"></i>
+                  CSS
+                </div>
+              </td>
+              <td>Estilo e layout</td>
+              <td><span class="badge mid">Médio</span></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="td-name">
+                  <i class="bi bi-filetype-js" style="color:#f7df1e;font-size:1.1rem"></i>
+                  JavaScript
+                </div>
+              </td>
+              <td>Interatividade</td>
+              <td><span class="badge hard">Difícil</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTATO ── -->
+  <section id="contatos">
+    <div class="sec">
+      <div class="contact-grid">
+        <div class="contact-left">
+          <div class="eyebrow">Fale Conosco</div>
+          <h2>Tem alguma<br><span>dúvida?</span></h2>
+          <p>Mande uma mensagem e entraremos em contato o mais breve possível. Adoramos ajudar quem está aprendendo!</p>
+
+          <div class="chips">
+            <div class="chip">
+              <div class="chip-ico"><i class="bi bi-envelope"></i></div>
+              contato@htmlcss.dev
+            </div>
+            <div class="chip">
+              <div class="chip-ico"><i class="bi bi-github"></i></div>
+              github.com/gabriel
+            </div>
+            <div class="chip">
+              <div class="chip-ico"><i class="bi bi-geo-alt"></i></div>
+              Serra, Espírito Santo — Brasil
+            </div>
+          </div>
+        </div>
+
+        <form class="cform" action="#" method="post">
+          <div class="fg">
+            <label>Nome</label>
+            <input type="text" name="nome" placeholder="Seu nome completo" required>
+          </div>
+          <div class="fg">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="seu@email.com" required>
+          </div>
+          <div class="fg">
+            <label>Mensagem</label>
+            <textarea name="mensagem" placeholder="Escreva sua mensagem..." required></textarea>
+          </div>
+          <button type="submit" class="btn-send">
+            Enviar Mensagem <i class="bi bi-send"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <p>© 2026 — Projeto <span>HTML &amp; CSS</span> · Feito por <span>Gabriel Ribeiro</span></p>
+  </footer>
+
+</body>
+</html>
